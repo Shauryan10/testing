@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Static Website</title>
+<style>
+  body {
+    background-color: lightyellow;
+    color: royalblue;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    color: royalblue;
+    background-color: white;
+    border: 2px solid royalblue;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: royalblue;
+    color: white;
+  }
+
+  #message {
+    margin-top: 20px;
+    font-size: 1.3rem;
+  }
+</style>
+</head>
+<body>
+
+  <h1>this is a static website</h1>
+
+  <button onclick="showMessage()">Click Me</button>
+
+  <p id="message"></p>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent = "welcome to my website";
+    }
+  </script>
+
+</body>
+</html>
